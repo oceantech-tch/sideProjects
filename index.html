@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h2>A SIMPLE CALCULATOR</h2>
+    <div id="container">
+        <div class="container-wrapper">
+            <div class="container-wrapper-inner">
+                <div class="container-body-inner">
+                    <div class="screen">
+                        <input type="text" id="display" value="0" readonly>
+                    </div>
+                    <div class="text">
+                        Ocean
+                    </div>
+                    <a href="">
+                        <div class="keyboard">
+                            <div class="power-buttons">
+                                <button id="turnOn">ON</button>
+                                <button id="turnOff">OFF</button>
+                            </div>
+                            <div class="buttons">
+                                <button data-value="Del" class="operator">Del</button>
+                                <button data-value="^" class="operator">^</button>
+                                <button data-value="%" class="operator"> % </button>
+                                <button data-value="÷" class="operator"> ÷ </button>
+                            
+                                <button data-value="7">7</button>
+                                <button data-value="8">8</button>
+                                <button data-value="9">9</button>
+                                <button data-value="x" class="operator">x</button>
+                            
+                                <button data-value="4">4</button>
+                                <button data-value="5">5</button>
+                                <button data-value="6">6</button>
+                                <button data-value="-" class="operator">-</button>
+                            
+                                <button data-value="1">1</button>
+                                <button data-value="2">2</button>
+                                <button data-value="3">3</button>
+                                <button data-value="+" class="operator">+</button>
+                            
+                                <button data-value="AC" class="operator">AC</button>
+                                <button data-value="0">0</button>
+                                <button data-value=".">.</button>
+                                <button data-value="=" class="operator equals">=</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 10px 0;
+}
+.container-wrapper {
+    width: 500px;
+    height: 100%;
+    margin: auto;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+}
+.container-wrapper-inner {
+    width: 320px;
+    height: 100%;
+    margin: auto;
+    border: none;
+    border-radius: 3px;
+    background-color: #03181f;
+    padding: 5px;
+    box-shadow: 0px 0px 35px 20px #aaa;
+}
+.container-body-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    margin: auto;
+    background-color: #319cb5;
+    padding: 15px;
+}
+.screen {
+    width: 93.5%;
+    height: 40%;
+    margin: 10px auto;
+    border: medium groove #ccf5fe;
+    border-radius: 2px;
+    background-color: #040d0f;
+    box-shadow: 0px 0px 7px #29292b;
+}
+.screen input {
+    width: 100%;
+    height: 75px;
+    font-size: 32px;
+    line-height: 80px;
+    vertical-align: bottom;
+    color: #040d0f;
+    text-align: right;
+    padding: 8px;
+    background-color: #f9f9f9;
+}
+.text {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2px;
+    color: #bec3c7;
+    text-shadow: 0px 0px 5px #222;
+    display: block;
+}
+.power-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+.power-buttons button {
+    width: 48%;
+    height: 45px;
+    border-color: #1b515e;
+}
+.buttons{
+    border-radius: 2px;
+    padding: 5px 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+#turnOn {
+    background-color: #28a745;
+}
+#turnOn:hover {
+    background-color: #218838;
+}
+#turnOff {
+    background-color: #f00;
+    
+}
+#turnOff:hover {
+    background-color: #c82333;
+}
+.operator {
+    background-color: #1b515e;
+}
+.operator:hover {
+    background-color: #319cb5;
+}
+button {
+    background-color: transparent;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #ebf1f1;
+    border-color: #1b515e;
+    font-size: 16px !important;
+}
+button:hover {
+    background-color: #3ca9c5;
+}
+
