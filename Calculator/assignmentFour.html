@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=backspace" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .calculator {
+            border: 2px solid #aaa;
+            border-radius: 5px;
+            width: 300px;
+            margin: 50px auto;
+        }
+        .screen {
+            width: 300px;
+            padding: 3px;
+        }
+        .screen input:not(#expression) {
+            width: 290px;
+            height: 60px;
+            border: none;
+            text-align: right;
+            font-size: 38px;
+            font-weight: 500;
+        }
+        .screen #expression {
+            width: 290px;
+            height: 60px;
+            border: none;
+            text-align: right;
+            font-size: 16px;
+            font-weight: 500;
+            padding-top: 5px;
+        }
+        .keyboard {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            background-color: #eef;
+            padding: 2px;
+        }
+        button {
+            font-size: 16px;
+            font-weight: 500;
+            padding: 12px 20px;
+            margin: 1px;
+            border: 1.5px solid #ddd;
+            background-color: #fff;
+            border-radius: 5px;
+            color: #252525;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="screen">
+            <input type="text" id="expression" disabled>
+            <input type="text" id="display" placeholder="0" disabled>
+        </div>
+        <div class="keyboard">
+          <button onclick="clearDisplay()">CE</button>
+          <button onclick="clearDisplay()">C</button>
+            <button onclick="deleteLastValue()"><i style="font-size: 19px; vertical-align: middle;" class="material-symbols-outlined">
+                backspace
+                </i></button>
+            <button onclick="handleOperator('/')">÷</button>
+            <button onclick="dataValue('7')">7</button>
+            <button onclick="dataValue('8')">8</button>
+            <button onclick="dataValue('9')">9</button>
+            <button onclick="handleOperator('x')">x</button>
+            <button onclick="dataValue('4')">4</button>
+            <button onclick="dataValue('5')">5</button>
+            <button onclick="dataValue('6')">6</button>
+            <button onclick="handleOperator('-')">-</button>
+            <button onclick="dataValue('1')">1</button>
+            <button onclick="dataValue('2')">2</button>
+            <button onclick="dataValue('3')">3</button>
+            <button onclick="handleOperator('+')">+</button>
+            <button onclick="changeOp()">+/-</button>
+            <button onclick="dataValue('0')">0</button>
+            <button onclick="dataValue('.')">.</button>
+            <button onclick="calculate()" style="background-color: #1065ba; color: #fff;">=</button>
+        </div>
+      </div>
+
+
+
+      <script src="./asFour.js"></script>
+</body>
+</html>
